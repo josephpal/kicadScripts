@@ -1,6 +1,5 @@
 '''
 	A python script to create Nice looking board previews.
-
 	These can be used for textures in MCAD tools to cever up the bland STEP board model.
 '''
 
@@ -354,10 +353,10 @@ def render(plot_plan, output_filename):
 		x1 = -x1
 
 	version = subprocess.check_output(['inkscape', '--version'], stderr=subprocess.STDOUT).split()
-	if len(version) > 1 and version[1] < "1.0":
+	if len(version) > 1:
 		subprocess.check_call([
 			'inkscape',
-			'--export-area={}:{}:{}:{}'.format(x0,y0,x1,y1),
+			'--export-area={}:{}:{}:{}'.format(int(x0),int(y0),int(x1),int(y1)),
 			'--export-dpi={}'.format(dpi),
 			'--export-png', final_png,
 			'--export-background', colours['BackGround'][0],
@@ -366,7 +365,7 @@ def render(plot_plan, output_filename):
 	else:
 		subprocess.check_call([
 			'inkscape',
-			'--export-area={}:{}:{}:{}'.format(x0,y0,x1,y1),
+			'--export-area={}:{}:{}:{}'.format(int(x0),int(y0),int(x1),int(y1)),
 			'--export-dpi={}'.format(dpi),
 			'--export-type=png',
 			'--export-filename={}'.format(final_png),
