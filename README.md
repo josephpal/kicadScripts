@@ -10,11 +10,13 @@ A collection of scripts to automate PCB rendering and exporting gerbers.
 # Usage #
 ## Create Pretty PNGs
 
-`python plot_board.py <PathToYourAwesomeProject.kicad_pcb>`
+`python3 plot_board.py <PathToYourAwesomeProject.kicad_pcb>`
 
 ## Create a GerberZip
 
-`python plot_gerbers.py <PathToYourAwesomeProject.kicad_pcb>`
+Note: not tested yet!
+
+`python3 plot_gerbers.py <PathToYourAwesomeProject.kicad_pcb>`
 
 Files are placed within a `plot` directory in the folder of the .kicad_pcb file
 
