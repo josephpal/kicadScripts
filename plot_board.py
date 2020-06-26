@@ -343,10 +343,10 @@ def render(plot_plan, output_filename):
 	x1 = ((bb.GetX() + bb.GetWidth()) / mmscale) * scale
 	y1 = ((yMax - (bb.GetY())) / mmscale) * scale
 
-	#x0 -= 10
-	#y0 -= 10
-	#x1 += 10
-	#y1 += 10
+	x0 -= 1
+	y0 -= 1
+	x1 += 1.5
+	y1 += 1.5
 
 	if bMirrorMode:
 		x0 = -x0
