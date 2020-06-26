@@ -7,6 +7,12 @@ A collection of scripts to automate PCB rendering and exporting gerbers.
 
 *I found PcbDraw after I started writting my own tool to do the same function. (I couldn't get lxml to install on windows.)
 
+## Setup
+- KICAD 5.1.6 installed via ppa
+- Linux Mint 19, Cinnamon
+- Inkscape 0.92.3
+- Python 3.6.9
+
 # Usage #
 ## Create Pretty PNGs
 
